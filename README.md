@@ -173,7 +173,7 @@ $ ssh-keygen -t rsa
 . On your virtual machine,save the public key in /home/grader/authorized_keys
 
 ```
-$ nano /home/grader/authorized_keys
+$ sudo nano /home/grader/.ssh/authorized_keys
 ```
 
 .Runon your virtual machine to change file permission

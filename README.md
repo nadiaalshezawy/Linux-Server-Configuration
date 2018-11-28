@@ -469,8 +469,11 @@ Note : when uploading the database , the description column in catalog was trunc
 Copy and paste contents of downloaded client_secrets.json to the file with same name under directory /var/www/catalog/catalog/client_secrets.json and
 update the path in the __init__.py to (/var/www/catalog/catalog/client_secrets.json).
 
+sourcse :
 
-
+1. [howtoinstall](https://www.howtoinstall.co/en/ubuntu/trusty/libapache2-mod-wsgi?action=remove)
+2. [stackoverflow](https://stackoverflow.com/questions/6454564/target-wsgi-script-cannot-be-loaded-as-python-module)
+3. [w3schools](https://www.w3schools.com/sql/sql_delete.asp)
 
 ## Author
  Nadia Ahmed

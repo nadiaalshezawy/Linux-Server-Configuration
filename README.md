@@ -195,14 +195,15 @@ $ nano /home/grader/authorized_keys
 $ ssh -i ~/.ssh/id_rsa -p 2200 grader@13.232.87.13
 ```
 
-##Prepare to deploy your project.
+## Prepare to deploy your project.
+
 9. Configure the local timezone to UTC.
 ```
 sudo dpkg-reconfigure tzdata
 ```
 select none of the above, then UTC
 
-10. Install and configure Apache to serve a Python mod_wsgi application.
+10.Install and configure Apache to serve a Python mod_wsgi application.
 
 1.Install and Configure Apache2, mod-wsgi and python
 
@@ -315,7 +316,8 @@ Give catalog user sudo access:
 $ sudo visudo
 ```
 Add
-``` $ catalog ALL=(ALL:ALL) ALL
+``` 
+$ catalog ALL=(ALL:ALL) ALL
 ```
 under line $ root ALL=(ALL:ALL) ALL
 Save and exit the file
@@ -461,9 +463,12 @@ application.secret_key = 'super_secret_key'
  $ python lotsofmenus.py
 ```
 
+Note : when uploading the database , the description column in catalog was truncated the character , to solve this issue had to resize it 5000 charcater .
+
 .create a new project on Google API Console and download client_scretes.json file
 Copy and paste contents of downloaded client_secrets.json to the file with same name under directory /var/www/catalog/catalog/client_secrets.json and
-update the path in the __init__.py to (/var/www/catalog/catalog/client_secrets.json)
+update the path in the __init__.py to (/var/www/catalog/catalog/client_secrets.json).
+
 
 
 

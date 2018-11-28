@@ -438,6 +438,34 @@ Restart Apache:
 ```
 $ sudo service apache2 reload
 ```
-Set  up in your server so that it functions correctly when visiting your server’s IP address in a browser. Make sure that your .git directory is not publicly accessible via a browser!
+
+. create the catalog.wsgi file and add these line to the content:
+
+```
+#!/usr/bin/python
+import sys
+import logging
+logging.basicConfig(stream=sys.stderr)
+sys.path.insert(0, "/var/www/catalog/")
+
+from catalog import app as application
+
+application.secret_key = 'super_secret_key'
+
+```
+
+
+. Create database by navigating to the folder (/var/www/catalog/catalog) and run these two command
+```
+ $ python database_setup.py
+ $ python lotsofmenus.py
+```
+
+.create a new project on Google API Console and download client_scretes.json file
+Copy and paste contents of downloaded client_secrets.json to the file with same name under directory /var/www/catalog/catalog/client_secrets.json and
+update the path in the __init__.py to (/var/www/catalog/catalog/client_secrets.json)
+
+
+
 ## Author
  Nadia Ahmed

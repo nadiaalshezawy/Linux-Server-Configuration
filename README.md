@@ -10,7 +10,7 @@ Public IP: 13.232.87.13
 Port: 2200
 
 
-##Getting Started
+## Getting Started
 This project uses Amazon Lightsail to create a Linux server instance.
 
 Get your server.
@@ -35,7 +35,7 @@ $ vagrant up
 $ vagrant ssh
 ```
 
-##SSH into your Server
+## SSH into your Server
 
 Amazon Lightsail enforces usage of an SSH key to connect to the instance. Download the SSH key from your account to connect to the server with thee default user ubuntu.
 
@@ -60,7 +60,7 @@ This command will actually update the software.
 sudo apt-get upgrade
 ```
 
-##Secure your server
+## Secure your server
 
 Change the SSH port from 22 to 2200
 
@@ -463,7 +463,7 @@ application.secret_key = 'super_secret_key'
  $ python lotsofmenus.py
 ```
 
-Note : when uploading the database , the description column in catalog was truncated the character , to solve this issue had to resize it 5000 charcater .
+Note : when uploading the database , the description column in catalog was truncated the character even it was working perfectly on local host, to solve this issue had to resize String(250) to String(5000) charcater .
 
 .create a new project on Google API Console and download client_scretes.json file
 Copy and paste contents of downloaded client_secrets.json to the file with same name under directory /var/www/catalog/catalog/client_secrets.json and

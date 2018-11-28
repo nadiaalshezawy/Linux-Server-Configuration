@@ -7,6 +7,8 @@ Server Info
 
 Public IP: 13.232.87.13
 
+URL : http://ec2-13-232-87-13.ap-south-1.compute.amazonaws.com
+
 Port: 2200
 
 

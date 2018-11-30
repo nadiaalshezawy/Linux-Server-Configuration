@@ -478,6 +478,7 @@ update the path in the __init__.py to (/var/www/catalog/catalog/client_secrets.j
 sources :
 
 1. [howtoinstall](https://www.howtoinstall.co/en/ubuntu/trusty/libapache2-mod-wsgi?action=remove)
+3. [stackoverflow -key](https://stackoverflow.com/questions/17670446/what-is-the-difference-between-various-keys-in-public-key-encryption)
 2. [stackoverflow](https://stackoverflow.com/questions/6454564/target-wsgi-script-cannot-be-loaded-as-python-module)
 3. [w3schools](https://www.w3schools.com/sql/sql_delete.asp)
 4. [Digitalocaen](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604)

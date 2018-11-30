@@ -7,7 +7,7 @@ Server Info
 
 Public IP: 13.232.87.13
 
-URL : [http://ec2-13-232-87-13.ap-south-1.compute.amazonaws.com](URL : http://ec2-13-232-87-13.ap-south-1.compute.amazonaws.com)
+URL : [http://ec2-13-232-87-13.ap-south-1.compute.amazonaws.com](http://ec2-13-232-87-13.ap-south-1.compute.amazonaws.com)
 
 Port: 2200
 
@@ -164,13 +164,15 @@ put this line
 grader ALL=(ALL) NOPASSWD:ALL
 ```
 
-3. Create an SSH key pair for grader using the ssh-keygen tool.
-1.Generate an encryption key on your local machine
+1. Create an SSH key pair for grader using the ssh-keygen tool.
+2. 
+2.Generate an encryption key on your local machine
+
 ```
 $ ssh-keygen -t rsa
 ```
 
-2.Place the public key on the server
+3.Place the public key on the server
 . On your local machine, read the generated public key cat ~/.ssh/grader-key.pub
 . On your virtual machine,make folder .ssh for grader ,save the public key in /home/grader/.ssh/authorized_keys
 
@@ -478,6 +480,7 @@ sources :
 1. [howtoinstall](https://www.howtoinstall.co/en/ubuntu/trusty/libapache2-mod-wsgi?action=remove)
 2. [stackoverflow](https://stackoverflow.com/questions/6454564/target-wsgi-script-cannot-be-loaded-as-python-module)
 3. [w3schools](https://www.w3schools.com/sql/sql_delete.asp)
+4. [Digitalocaen](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604)
 
 ## Author
  Nadia Ahmed

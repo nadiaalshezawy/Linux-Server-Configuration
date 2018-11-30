@@ -481,6 +481,7 @@ sources :
 2. [stackoverflow](https://stackoverflow.com/questions/6454564/target-wsgi-script-cannot-be-loaded-as-python-module)
 3. [w3schools](https://www.w3schools.com/sql/sql_delete.asp)
 4. [Digitalocaen](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1604)
+5. [godaddy](https://ae.godaddy.com/help/remove-a-linux-user-19158)
 
 ## Author
  Nadia Ahmed

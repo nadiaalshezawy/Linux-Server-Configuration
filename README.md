@@ -7,11 +7,7 @@ Server Info
 
 Public IP: 13.232.87.13
 
-<<<<<<< HEAD
 URL : [http://ec2-13-232-87-13.ap-south-1.compute.amazonaws.com](URL : http://ec2-13-232-87-13.ap-south-1.compute.amazonaws.com)
-=======
-URL : http://ec2-13-232-87-13.ap-south-1.compute.amazonaws.com
->>>>>>> f6c040890d91ea09fa50f09b7e0d893d6e4d417a
 
 Port: 2200
 
@@ -179,14 +175,12 @@ $ ssh-keygen -t rsa
 . On your virtual machine,make folder .ssh for grader ,save the public key in /home/grader/.ssh/authorized_keys
 
 ```
-<<<<<<< HEAD
+
 $ sudo  nano /home/grader/.ssh/authorized_keys
-=======
-$ sudo nano /home/grader/.ssh/authorized_keys
->>>>>>> f6c040890d91ea09fa50f09b7e0d893d6e4d417a
+
 ```
 
-.Runon your virtual machine to change file permission for the grader 
+.Run on your virtual machine to change file permission for the grader user folder and file  
 
 ```
  $ chmod 700 .ssh 

@@ -7,6 +7,8 @@ Server Info
 
 Public IP: 13.232.87.13
 
+URL : [http://ec2-13-232-87-13.ap-south-1.compute.amazonaws.com](URL : http://ec2-13-232-87-13.ap-south-1.compute.amazonaws.com)
+
 Port: 2200
 
 
@@ -169,14 +171,14 @@ $ ssh-keygen -t rsa
 ```
 
 2.Place the public key on the server
-. On your local machine, read the generated public key cat ~/.ssh/id_rsa.pub
-. On your virtual machine,save the public key in /home/grader/authorized_keys
+. On your local machine, read the generated public key cat ~/.ssh/grader-key.pub
+. On your virtual machine,make folder .ssh for grader ,save the public key in /home/grader/.ssh/authorized_keys
 
 ```
-$ nano /home/grader/authorized_keys
+$ sudo  nano /home/grader/.ssh/authorized_keys
 ```
 
-.Runon your virtual machine to change file permission
+.Runon your virtual machine to change file permission for the grader 
 
 ```
  $ chmod 700 .ssh 
@@ -192,7 +194,7 @@ $ nano /home/grader/authorized_keys
 .login to grader
 
 ```
-$ ssh -i ~/.ssh/id_rsa -p 2200 grader@13.232.87.13
+$ ssh -i ~/.ssh/grader-key grader@13.232.87.13 -p 2200 
 ```
 
 ## Prepare to deploy your project.

@@ -239,31 +239,17 @@ $ sudo service apache2 restart
 $ sudo apt-get install postgresql
 ```
 
-Check if no remote connections are allowed :
+No remote connections are allowed :
 ```
-sudo cat /etc/postgresql/9.5/main/pg_hba.conf
+sudo vim /etc/ssh/sshd_config
 ```
 
-This how the  file look:
-```
-#
-# Database administrative login by Unix domain socket
-local   all             postgres                                peer
+Then uncomment (if it is commented) the directive PermitRootLogin and set its value to no :
 
-# TYPE  DATABASE        USER            ADDRESS                 METHOD
-
-# "local" is for Unix domain socket connections only
-local   all             all                                     peer
-# IPv4 local connections:
-host    all             all             127.0.0.1/32            md5
-# IPv6 local connections:
-host    all             all             ::1/128                 md5
-# Allow replication connections from localhost, by a user with the
-# replication privilege.
-#local   replication     postgres                                peer
-#host    replication     postgres        127.0.0.1/32            md5
-#host    replication     postgres        ::1/128                 md5
 ```
+PermitRootLogin no
+```
+
 
 Create a new database user named catalog :
 
